@@ -13,6 +13,6 @@ except TypeError:
 except Exception as e:
     print("Caught some other error: %s" % e.__class__.__name__)
 else:
-    print("This code called if there is no exception")
+    print("This book_code called if there is no exception")
 finally:
-    print("This cleanup code is always called")
+    print("This cleanup book_code is always called")

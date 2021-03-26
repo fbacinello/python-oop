@@ -1,4 +1,3 @@
-import os
 import shutil
 import zipfile
 from pathlib import Path
@@ -12,7 +11,7 @@ class ZipProcessor:
 
     def process_zip(self):
         self.unzip_files()
-        self.processor.process_files(self.zipname)
+        self.processor.process_files(self.temp_directory)
         self.zip_files()
 
     def unzip_files(self):
